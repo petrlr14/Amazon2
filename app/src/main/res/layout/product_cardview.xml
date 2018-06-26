@@ -8,54 +8,6 @@
     app:cardPreventCornerOverlap="true"
     app:cardUseCompatPadding="true">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
 
-
-        <RelativeLayout
-            android:id="@+id/relativeLayout_productTop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <ImageButton
-                android:layout_alignParentRight="true"
-                android:id="@+id/imageButton_addWishlist"
-                android:src="@drawable/ic_star_border_black_24dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/gris"/>
-
-            <ImageView
-                android:layout_centerInParent="true"
-                android:id="@+id/imageView_productPhoto"
-                android:layout_width="wrap_content"
-                android:src="@drawable/ic_launcher_background"
-                android:layout_height="150dp" />
-
-            <TextView
-                android:layout_centerHorizontal="true"
-                android:text="Gucci flip flops"
-                android:layout_below="@id/imageView_productPhoto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView_productName"/>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_below="@id/relativeLayout_productTop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/textView_productPrice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text="Price"/>
-
-        </RelativeLayout>
-    </RelativeLayout>
 
 </android.support.v7.widget.CardView>
