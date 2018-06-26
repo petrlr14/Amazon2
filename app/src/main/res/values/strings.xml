@@ -5,4 +5,7 @@
     <string name="text_need_an_account">Need an account?</string>
     <string name="text_log_in">LOG IN</string>
     <string name="text_create_an_account">CREATE AN ACCOUNT</string>
+    <string name="text_username">Username</string>
+    <string name="text_password">Password</string>
+    <string name="text_content_description_app_logo">App logo</string>
 </resources>
