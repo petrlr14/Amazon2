@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_wishlist_item"
+            android:title="@string/text_wishlist" />
+
+        <item
+            android:id="@+id/menu_offers_item"
+            android:title="@string/text_offers" />
+
+        <item
+            android:id="@+id/menu_categories_submenu"
+            android:title="@string/text_categories">
+
+            <menu>
+
+                <group android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/submenu_man_item"
+                        android:title="@string/text_man" />
+
+                    <item
+                        android:id="@+id/submenu_woman_item"
+                        android:title="@string/text_woman" />
+
+                    <item
+                        android:id="@+id/submenu_kids_item"
+                        android:title="@string/text_kids" />
+
+                </group>
+
+            </menu>
+
+        </item>
+
+        <item
+            android:id="@+id/menu_others_item"
+            android:title="@string/text_others">
+
+            <menu>
+
+                <group android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/submenu2_settings_item"
+                        android:title="@string/text_settings" />
+
+                    <item
+                        android:id="@+id/submenu2_logout_item"
+                        android:title="@string/text_log_out" />
+
+                </group>
+
+            </menu>
+
+        </item>
+    </group>
+</menu>
