@@ -11,6 +11,9 @@
             android:id="@+id/menu_offers_item"
             android:title="@string/text_offers" />
 
+        <item android:id="@+id/menu_highlights_item"
+            android:title="@string/text_highlights"/>
+
         <item
             android:id="@+id/menu_categories_submenu"
             android:title="@string/text_categories">
