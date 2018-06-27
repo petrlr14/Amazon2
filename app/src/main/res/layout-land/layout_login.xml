@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_centerInParent="true">
 
 
     <ImageView
         android:id="@+id/imageView_login_forever33Logo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/text_content_description_app_logo"/>
 
@@ -62,56 +62,14 @@
         android:text="@string/text_forgot_your_password"
         android:textColor="@android:color/black" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout_login_division"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textView_login_forgotPassword"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="4dp"
-        android:gravity="center">
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="2dp"
-            android:layout_weight="4"
-            android:background="@color/colorGray" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:gravity="center"
-            android:text="@string/text_or" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="2dp"
-            android:layout_weight="4"
-            android:background="@color/colorGray" />
-
-    </LinearLayout>
 
     <TextView
         android:id="@+id/textView_login_needAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/linearLayout_login_division"
         android:layout_centerHorizontal="true"
         android:layout_margin="4dp"
-        android:text="@string/text_need_an_account" />
-
-    <Button
-        android:id="@+id/button_login_createAccount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textView_login_needAccount"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="16dp"
-        android:background="@drawable/shape_button"
-        android:padding="8dp"
-        android:text="@string/text_create_an_account"
-        android:textColor="@color/colorAccent"
-        android:textStyle="bold" />
+        android:text="@string/text_need_an_account_sign_in"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>
