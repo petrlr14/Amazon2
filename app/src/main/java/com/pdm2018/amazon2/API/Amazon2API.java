@@ -1,20 +1,12 @@
 package com.pdm2018.amazon2.API;
 
-import com.pdm2018.amazon2.models.Login;
+import com.pdm2018.amazon2.models.Example;
 
 import retrofit2.Call;
-import retrofit2.http.Field;
-import retrofit2.http.FormUrlEncoded;
-import retrofit2.http.POST;
+import retrofit2.http.GET;
 
 public interface Amazon2API {
 
-    String END_POINT = "http://gamenewsuca.herokuapp.com";
-
-    @FormUrlEncoded
-    @POST("/login")
-    Call<Login> login(
-            @Field("user") String username,
-            @Field("password") String password
-    );
+    @GET("/products")
+    Call<Example> login();
 }

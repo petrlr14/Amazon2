@@ -16,7 +16,7 @@ public class TokenDeserializer implements JsonDeserializer<Login>{
         if (json.getAsJsonObject() != null) {
             JsonObject tokenJsonObject = json.getAsJsonObject();
             if (tokenJsonObject.get("token") != null) {
-                aux.setToken(tokenJsonObject.get("token").getAsString());
+                aux.setToken(tokenJsonObject.get("token").toString());
             }
         }
         return aux;

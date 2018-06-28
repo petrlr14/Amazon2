@@ -18,7 +18,7 @@ public class RetrofitSingleton {
         return retrofit;
     }
 
-    public static final String END_POINT = "http://amazonbay.herokuapp.com/";
+    public static final String END_POINT = "https://maxisun-prueba.herokuapp.com";
 
     public static Amazon2API startAPI() {
         return RetrofitSingleton.getClient(END_POINT).create(Amazon2API.class);
