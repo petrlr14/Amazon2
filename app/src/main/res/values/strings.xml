@@ -20,4 +20,7 @@
     <string name="text_user">User</string>
     <string name="text_highlights">Highlights</string>
     <string name="text_need_an_account_sign_in">Need an account? <u>Sign in</u></string>
+    <string name="text_product_picture">Product picture</string>
+    <string name="text_product_favorite_button">Product favorite button</string>
+    <string name="text_product_name">Product name</string>
 </resources>

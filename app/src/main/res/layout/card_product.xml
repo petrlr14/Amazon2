@@ -1,13 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="2dp"
     app:cardElevation="4dp"
     app:cardPreventCornerOverlap="true"
-    app:cardUseCompatPadding="true">
+    app:cardUseCompatPadding="true"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_recycler_productInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_recycler_productPicture"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/text_product_picture" />
+
+        <TextView
+            android:id="@+id/textView_recycler_productTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView_recycler_productPicture"
+            android:text="@string/text_product_name"
+            android:layout_centerHorizontal="true"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/imageButton_recycler_productFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/text_product_favorite_button"
+            android:src="@drawable/ic_star_border_black_24dp"
+            android:background="@android:color/transparent"
+            android:layout_below="@id/textView_recycler_productTitle"
+            android:layout_marginRight="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginTop="8dp"/>
 
 
+        <Button
+            android:id="@+id/button_recycler_productColor"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/textView_recycler_productTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"/>
+
+
+    </RelativeLayout>
 
 </android.support.v7.widget.CardView>
